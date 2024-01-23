@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 * Start Bootstrap - SB Admin Pro v2.0.0 (https://shop.startbootstrap.com/product/sb-admin-pro)
 * Copyright 2013-2021 Start Bootstrap
@@ -60,9 +61,11 @@
   --bs-info-soft: #daf2f8;
   --bs-warning-soft: #f2eee3;
   --bs-danger-soft: #f1e0e3;
-  --bs-font-sans-serif: 'Roboto', sans-serif;
+  --bs-font-sans-serif: 'Roboto-Black', src: url('../assets/fonts/Roboto-Black.ttf') format('ttf');
   --bs-font-monospace: 'Fira Code', monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+
 }
 
 *,
@@ -106,11 +109,21 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #363d47;
+  color: #0058d4;
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../assets/fonts/Roboto-Black.ttf') format('ttf');
+  /* Adicione formatos adicionais, se necessário (eot, ttf, svg, etc.) */
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1, .h1 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-family: var(--bs-font-sans-serif);
+  font-size: calc(0.700rem + 2vw);
+  line-height: 1.1;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -128,7 +141,8 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.255rem + 0.06vw);
+  font-size: calc(1.200rem + 0.06vw);
+  line-height: 1.5;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -15744,14 +15758,14 @@ body {
 }
 
 @font-face {
-  font-family: "Metropolis";
-  src: url("../assets/fonts/metropolis/Metropolis-Thin.otf");
+  font-family: "Roboto-Bold";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("../assets/fonts/metropolis/Metropolis-ThinItalic.otf");
+  font-family: "Roboto-Bolditalic.ttf";
+  src: url("../assets/fonts/Roboto-Bolditalic");
   font-weight: 100;
   font-style: italic;
 }
@@ -20502,14 +20516,4 @@ pre[class*=language-] {
 
 .token.variable {
   color: #ff6666;
-}
-.box {
-  width: 50%;
-  float: left;
-  height: 300px;/*Altura da linha*/
-}
-
-.linha-vertical {
-  border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
-  box-sizing: border-box;
 }
