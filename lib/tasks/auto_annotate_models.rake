@@ -1,6 +1,3 @@
-# NOTE: only doing this in development as some production environments (Heroku)
-# NOTE: are sensitive to local FS writes, and besides -- it's just not proper
-# NOTE: to have a dev-mode tool do its thing in production.
 if Rails.env.development?
   require 'annotate'
   task :set_annotation_options do
@@ -9,7 +6,7 @@ if Rails.env.development?
     Annotate.set_defaults(
       'active_admin'                => 'false',
       'additional_file_patterns'    => [],
-      'routes'                      => 'false',
+      'routes'                      => 'true',
       'models'                      => 'true',
       'position_in_routes'          => 'before',
       'position_in_class'           => 'before',
