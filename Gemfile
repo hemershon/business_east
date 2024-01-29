@@ -67,7 +67,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'simplecov'
   gem 'rails-erd'
-  gem "debug", platforms: %i[ mri windows ]
+  gem 'byebug', platform: :mri
 end
 
 group :development do
