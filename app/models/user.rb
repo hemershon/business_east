@@ -27,4 +27,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   # validate :company_name, presence: true
-        end
+       
+end
