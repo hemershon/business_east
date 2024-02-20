@@ -11,7 +11,7 @@
               <div class="text-center small text-muted mb-4">...or enter your information below.</div>
                 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
                   <%= render "users/shared/error_messages", resource: resource %>
-                    <div class="row gx-3">
+                    <div class="row gx-3"><a href="auth-login-social.html">Sign in!</a>
                       <div class="col-md-6">
                         <div class="mb-3">
                           <label class="text-gray-600 small" for="firstNameExample">Empresa ou serviço</label>
@@ -79,7 +79,7 @@
                 <div class="card-body px-5 py-4">
                   <div class="small text-center">
                     Have an account?
-              <a href="auth-login-social.html">Sign in!</a>
+              <%= render "users/shared/links" %>
             </div>
           </div>
         </div>
