@@ -3,7 +3,8 @@ source "https://rubygems.org"
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.2"
+gem 'rails', '= 7.1.3', '>= 7.0.0'
+
 gem 'devise', '~> 4.9'
 gem 'font-awesome-rails'
 gem 'sassc', '~> 2.4'
@@ -11,6 +12,9 @@ gem 'bootstrap_sb_admin_base_v2'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.1'
 gem 'rubocop', '~> 1.36', require: false
 gem 'sass-rails', '~> 6.0'
+gem 'mailcatcher'
+gem 'sqlite3'
+
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
